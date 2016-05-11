@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script  src="Index.js" />-->
+    <!--<script src="./Index.js"></script>-->
+    <link href="./content/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="./content/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="external.js"></script>
+    <script src="form.js"></script>
+    <script src="names.js"></script>
+    <script src="XhrExample.js"></script>
+    <!--<script src="calculations.js"></script>-->
+    <!--<script src="thisExamples.js"></script>-->
+    <!--<script src="closure.js"></script>-->
+    <script src="Roles.js"></script>
+</head>
+<body class="row">
+<h1>main page</h1>
+<div>main div</div>
+<ul id="names">
+
+</ul>
+<div id="users" class="col-md-8 col-md-offset-2">
+
+    <button type="button" id="loadUsers" onclick="loadUsers()" class="btn btn-lg btn-primary">
+     load users
+    </button>
+</div>
+
+<div id="roles" class="col-md-5 col-md-offset-5">
+    roles
+</div>
+
+
+<div class="col-md-6 col-md-offset-3">
+
+
+    <form>
+        <div class="form-group">
+            <label class="control-label">name</label>
+            <input type="text" id="name" name="name" class=" form-control"/>
+            <button type="button" onclick="addName()">Add Name</button>
+        </div>
+        <div class="form-group">
+            <input type="text" id="count" value="10" class="in count form-control"/>
+        </div>
+        <div class="form-group">
+            <input type="number" name="num" id="num" class="in number form-control">
+        </div>
+        <div class="form-group">
+            <button type="button" id="getcount">get count</button>
+            <button type="button" onclick="getNum()">get num</button>
+            <button type="button" onclick="setCount(getNum())">set count</button>
+            <button type="button" onclick="clearAll()">clear all</button>
+            <button type="button" onclick="clearCount()">Clear Count</button>
+            <button type="button" onclick="clearNum()">Clear Num</button>
+        </div>
+
+
+    </form>
+</div>
+</body>
+</html>
